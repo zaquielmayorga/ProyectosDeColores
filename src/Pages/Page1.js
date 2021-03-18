@@ -10,7 +10,10 @@ const Page1 = () => {
   console.log(data);
   return (
     <>
-      <h1 className="textTitle">Copia y pega el color de la empresa</h1>
+      <h1 className="textTitle">ColoresApp</h1>
+      <h3 className="textTitle">
+        Selecciona una una tarjeta para copiar su color
+      </h3>
       {loading ? (
         "Loading..."
       ) : (

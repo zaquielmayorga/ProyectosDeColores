@@ -10,7 +10,11 @@ const Page2 = () => {
   const [data, loading] = useFetch("https://reqres.in/api/colors?page=2");
   return (
     <>
-      <h1 className="textTitle">Copia y pega el color de la empresa</h1>
+      <h1 className="textTitle">ColoresApp</h1>
+      <h3 className="textTitle">
+        Selecciona una una tarjeta para copiar su color
+      </h3>
+
       {loading ? (
         "Loading..."
       ) : (
