@@ -1,21 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import { Card, CardColumns } from "react-bootstrap";
+import { Card, CardColumns, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Card.css";
-// import { useFetch } from "./hooks";
-// function Photos() {
-//   const [data, loading] = useFetch("https://reqres.in/api/colors");
-//   return
-// const [toShowProject, setShowProject] = useState(false);
-// function handleShowProject() {
-// //   setShowProject(true);
-// }
-const Cards = () => {
+import "./../Card.css";
+
+const Page1 = () => {
   return (
     <div>
-      {/* {toShowProject ? <Redirect to="/project" /> : null} */}
-
       <h1 className="textTitle">Copia y pega el color de la empresa</h1>
       <CardColumns>
         <Card className="card1">
@@ -86,11 +78,13 @@ const Cards = () => {
           </Card.Body>
         </Card>
       </CardColumns>
-      {/* <Button type="submit" onClick={handleShowProject} buttonSize="btn_medium">
-        <div className="dropdown-divider">{nickname}</div>
-      </Button> */}
+      <Link to="/page2">
+        <Button variant="primary" size="lg" active>
+          Siguiente
+        </Button>
+      </Link>
     </div>
   );
 };
 
-export default Cards;
+export default Page1;

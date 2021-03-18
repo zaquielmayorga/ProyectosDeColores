@@ -28,3 +28,31 @@
 
   background-color: #53b0ae;
 }
+.card7 {
+  height: 300px;
+  background-color: #decdbe;
+}
+.card8 {
+  height: 300px;
+  background-color: #9b1b30;
+}
+.card9 {
+  height: 300px;
+  background-color: #5a5b9f;
+}
+.card10 {
+  height: 300px;
+  background-color: #f0c05a;
+}
+.card11 {
+  height: 300px;
+  background-color: #45b5aa;
+}
+
+.card12 {
+  height: 300px;
+  background-color: #d94f70;
+}
+.buttonPage {
+  float: center;
+}
