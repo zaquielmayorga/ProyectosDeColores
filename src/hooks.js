@@ -6,7 +6,6 @@ const useFetch = (url) => {
   async function fetchUrl() {
     const response = await fetch(url, {
       method: "GET",
-      credentials: "include",
     });
     const json = await response.json();
     setData(json);

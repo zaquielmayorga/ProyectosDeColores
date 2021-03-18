@@ -53,6 +53,6 @@
   height: 300px;
   background-color: #d94f70;
 }
-.buttonPage {
-  float: center;
+.button {
+  text-align: center;
 }
