@@ -3,11 +3,12 @@ import { Card, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./../Card.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-
+import { useState } from "react";
 const Cardtemplate = (data) => {
+  const [copied, setCopied] = useState(false);
   return (
     <div>
-      <CopyToClipboard text={data.data.color}>
+      <CopyToClipboard text={data.data.color} onCopy={() => setCopied(true)}>
         <Card className={`card${data.data.id}`}>
           <Button
             style={{ backgroundColor: data.data.color }}
@@ -22,6 +23,7 @@ const Cardtemplate = (data) => {
           </Button>
         </Card>
       </CopyToClipboard>
+      {copied ? <span style={{ color: "red" }}>Copied</span> : null}
     </div>
   );
 };

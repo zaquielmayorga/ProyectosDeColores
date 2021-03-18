@@ -1,6 +1,6 @@
 .card {
-  height: 250px;
-  width: 250px;
+  height: 230px;
+  width: 230px;
   text-align: center;
 }
 
@@ -10,5 +10,6 @@
 }
 
 .btnwidth {
+  margin-top: 20px;
   width: 20%;
 }
