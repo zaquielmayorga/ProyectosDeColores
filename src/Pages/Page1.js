@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 import { Card, CardColumns, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./../Card.css";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
 const Page1 = () => {
   const [data, loading] = useFetch("https://reqres.in/api/colors");
-  // if (data.length > 0) {
-  // }
-
   return (
     <>
       <h1 className="textTitle">Copia y pega el color de la empresa</h1>
@@ -16,14 +15,18 @@ const Page1 = () => {
         "Loading..."
       ) : (
         <CardColumns className="text-align">
-          <Card className="card1">
-            <Card.Body>
-              <Card.Title>{data.data[0].name}</Card.Title>
-              <Card.Text>{data.data[0].year}</Card.Text>
-              <Card.Text>{data.data[0].color}</Card.Text>
-              <Card.Text>{data.data[0].panetone_value}</Card.Text>
-            </Card.Body>
-          </Card>
+          <CopyToClipboard text={data.data[0].color}>
+            <Button className="card1">
+              <Card className="card1">
+                <Card.Body>
+                  <Card.Title>{data.data[0].name}</Card.Title>
+                  <Card.Text>{data.data[0].year}</Card.Text>
+                  <Card.Text>{data.data[0].color}</Card.Text>
+                  <Card.Text>{data.data[0].panetone_value}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Button>
+          </CopyToClipboard>
           <Card className="card2">
             <Card.Body>
               <Card.Title>{data.data[1].name}</Card.Title>
