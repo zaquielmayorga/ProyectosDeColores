@@ -23,10 +23,17 @@ Y correr el servidor con ----------->npm start
 
 ----------------------------------> npm install --save react-router-dom
 
-React-copy-to-clipboard: Esta es una dependencia que facilita trabajar con la copia al portapapeles para instalarla solo deberemos colocar esta linea de comando en la consola:
+React-copy-to-clipboard: Esta es una dependencia que facilita trabajar con la copia al portapapeles para instalarla solo deberemos colocar esta línea de comando en la consola:
 -------------------------------> npm install --save react-copy-to-clipboard
 
+Para el control de Versiones he Utilizado Git/GitHub
+Mi gitHub es ----->https://github.com/zaquielmayorga
+
+Para hacer el Deploy he utilizado Heroku https://heroku.com/
+
 APP WEB : COLORES APP --------------- > https://coloresapp.herokuapp.com/
+
+Muchas Gracias por la oportunidad
 
 # Getting Started with Create React App
 
