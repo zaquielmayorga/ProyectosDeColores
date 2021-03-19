@@ -1,4 +1,32 @@
-Hola muy buenas, encantado en saludarlos. Mi nombre es Zaquiel y aquí dejaré por escrito ca
+Hola muy buenas, encantado de saludarlos. Mi nombre es Zaquiel y aquí dejaré por escrito por acá una breve introducción sobre la aplicación:
+
+Esta aplicación tiene como propósito facilitar a los usuarios y trabajadores de la empresa copiar fácilmente en portapapeles los colores de la misma y poder darle algún uso a posteriori.
+
+Estos colores se copiaran de forma hexadecimal al presionar cualquier tarjeta disponible en la pantalla
+
+Dependencias Y Framework utilizados:
+
+“React: es mi herramienta favorita para desarrollar app webs, y básicamente permite hacer web dinámicas mucho más fácil con unido lo mejor de javascript y HTML (Jsx)
+
+Para instalarlo deberemos usar esa línea de comando :
+-----------------------------------------------> npx create-react-app my-app
+
+Después acceder al directorio ------> cd my-app
+
+Y correr el servidor con ----------->npm start
+
+"React-bootstrap": Esta es una librería que tiene como objetivo maquetar de forma rápida todos los elementos de una una página o aplicación web. Para usarla solo debemos instalarla dentro de nuestro proyecto con esta línea de comando:
+
+-------------------------------------> npm install react-bootstrap bootstrap
+
+"React-router-dom": Esta dependencia nos permite utilizar más herramientas de react que facilitan el desarrollo como por ejemplo la componente “LINK” que proporciona una navegación declarativa y accesible alrededor de su aplicación o “ROUTER” Su responsabilidad más básica es renderizar alguna IU cuando su ruta coincide con la URL actual. Hay muchas más pero estas son las que puedo recalcar, para utilizarlas solo hay que instalar estas dependencias:
+
+----------------------------------> npm install --save react-router-dom
+
+React-copy-to-clipboard: Esta es una dependencia que facilita trabajar con la copia al portapapeles para instalarla solo deberemos colocar esta linea de comando en la consola:
+-------------------------------> npm install --save react-copy-to-clipboard
+
+APP WEB : COLORES APP --------------- > https://coloresapp.herokuapp.com/
 
 # Getting Started with Create React App
 
