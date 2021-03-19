@@ -23,7 +23,9 @@ const Cardtemplate = (data) => {
           </Button>
         </Card>
       </CopyToClipboard>
-      {copied ? <span style={{ color: "red" }}>Copied</span> : null}
+      {copied ? (
+        <span style={{ color: "red" }}>Copiado en portapapeles</span>
+      ) : null}
     </div>
   );
 };
